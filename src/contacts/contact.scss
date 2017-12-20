@@ -1,232 +1,1 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    background-color: darkslateblue;
-    height: 200px;
-    margin-left: 0px;
-    margin-right: 0px;
-    min-width: 800px;
-    &__logo {
-        margin-left: auto;
-        margin-right: auto;
-        width: 880px;
-    }
-    &__menu {
-        margin-left: auto;
-        margin-right: auto;
-        margin: 27px 0 15px 0;
-        width: 900px;
-        float: right;
-    }
-}
-
-.logo {
-    &__title {
-        font: normal 1.7em 'century gothic', arial;
-        padding: 24px 0 0 0;
-        color: #000;
-        &_link,
-        &_link:hover {
-            @extend .logo__title;
-            color: #fff;
-            letter-spacing: 0.1em;
-            text-decoration: none;
-        }
-    }
-    &__text {
-        font: normal 1.2em 'century gothic', arial;
-        margin: 0 0 15px 0;
-        padding: 15px 0 10px 0;
-        color: #999;
-    }
-}
-
-.menu {
-    font-size: 0.8em;
-
-    &__item,
-    &__item:hover {
-        padding: 10px 35px 5px 0px;
-        color: #fff;
-        font: normal 1.2em 'trebuchet ms', sans-serif;
-        text-decoration: none;
-
-    }
-}
-
-.menu__item.menu__item_selected {
-    color: #aeb002;
-}
-
-.content {
-    width: 880px;
-    margin: 20px auto 0 auto;
-    overflow: hidden;
-    &__movies {
-        text-align: left;
-        width: 620px;
-        padding: 0 0 0 5px;
-        float: left;
-    }
-    &__serials {
-        @extend .content__movies;
-    }
-    &__post {
-        @extend .content__movies;
-    }
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    padding: 10px 0 0 0;
-    text-align: center;
-    background-color: darkslateblue;
-    color: #a8aa95;
-    font-size: 1.1em;
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0;
-    min-width: 900px;
-}
-
-.sidebar {
-    float: right;
-    width: 224px;
-    &__search {
-        float: right;
-        width: 222px;
-        padding: 5%;
-        margin: 0 0 16px 0;
-        border: solid 1px #f2f2f2;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
-    &__log-in {
-        @extend .sidebar__search;
-    }
-    &__news {
-        @extend .sidebar__search;
-    }
-    &__rate {
-        @extend .sidebar__search;
-    }
-}
-
-.search {
-    font: normal 1.3em 'century gothic', arial;
-    &__title {
-        font-weight: 100;
-        margin: 0 0 15px 0;
-        padding: 15px 0 5px 0;
-        color: #136cb2;
-    }
-    &__input {
-        outline: none;
-        border: none;
-        border: solid 1px #f2f2f2;
-        color: #5d5d5d;
-        width: 60%;
-        padding: 8px;
-    }
-    &__btn {
-        outline: none;
-        border: none;
-        border: solid 1px #f2f2f2;
-        padding: 8px;
-        background-color: white;
-        cursor: pointer;
-    }
-}
-
-.log-in {
-    @extend .search;
-    &__title {
-        @extend .search__title;
-    }
-    &__login-text {
-        @extend .search__input;
-    }
-    &__password {
-        @extend .search__input;
-    }
-    &__btn {
-        @extend .search__btn;
-    }
-    &__forgot {
-        outline: none;
-        text-decoration: underline;
-        color: #aeb002;
-        font-size: 0.7em;
-        margin-top: 3%;
-        margin-left: 2%;
-    }
-    &__sign-up {
-        @extend .log-in__forgot;
-    }
-}
-
-.news {
-    @extend .search;
-    &__title {
-        @extend .search__title;
-    }
-    &__date {
-        color: #555;
-    }
-    &__item {
-        padding: 20px;
-        line-height: 1.7em;
-        font-family: serif;
-        color: #555;
-    }
-    &__read-more {
-        @extend .log-in__forgot;
-        font-size: 1em;
-        font-family: serif;
-    }
-}
-
-.rate {
-    @extend .search;
-    &__title {
-        @extend .search__title;
-    }
-    &__list {
-        margin: 0;
-    }
-    &__li {
-        line-height: 1.8em;
-        list-style-type: none;
-    }
-    &__movie {
-        @extend .news__read-more;
-    }
-    &__point {
-        margin: 0;
-        @extend .news__read-more;
-        float: right;
-    }
-}
-
-.footer {
-    
-    &__links {
-        padding-top: 15px;
-    }
-    &__link {
-        color: #a8aa95;
-        text-decoration: none
-    }
-    &__link:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-    &__who {
-        margin-top: 10px;
-    }
-}
+* {    margin: 0;    padding: 0;}.header {    background-color: darkslateblue;    height: 200px;    margin-left: 0px;    margin-right: 0px;    min-width: 800px;    &__logo {        margin-left: auto;        margin-right: auto;        width: 880px;        padding-left: 5px;    }    &__menu {        margin: 27px auto 15px auto;        width: 470px;    }}.logo {    &__title {        font: normal 1.7em 'century gothic', arial;        padding: 24px 0 0 0;        color: #000;        &_link,        &_link:hover {            @extend .logo__title;            color: #fff;            letter-spacing: 0.1em;            text-decoration: none;        }    }    &__text {        font: normal 1.2em 'century gothic', arial;        margin: 0 0 15px 0;        padding: 15px 0 10px 0;        color: #999;    }}.menu {    font-size: 0.8em;    &__item,    &__item:hover {        display:  inline-block;        padding: 10px 35px 5px 0px;        color: #fff;        font: normal 1.2em 'trebuchet ms', sans-serif;        text-decoration: none;    }}.menu__item.menu__item_selected {    color: #aeb002;}.content {    width: 880px;    margin: 20px auto 0 auto;    overflow: hidden;    &__movies {        text-align: left;        width: 620px;        padding: 0 0 0 5px;        float: left;    }    &__serials {        @extend .content__movies;    }    &__post {        @extend .content__movies;    }}.footer {    width: 100%;    height: 100px;    padding: 10px 0 0 0;    text-align: center;    background-color: darkslateblue;    color: #a8aa95;    font-size: 1.1em;    margin-top: 20px;    margin-left: 0px;    margin-right: 0px;    margin-bottom: 0;    min-width: 900px;}.sidebar {    float: right;    width: 224px;    &__search {        float: right;        width: 222px;        padding: 5%;        margin: 0 0 16px 0;        border: solid 1px #f2f2f2;        border-radius: 5px;        background-color: #f9f9f9;    }    &__log-in {        @extend .sidebar__search;    }    &__news {        @extend .sidebar__search;    }    &__rate {        @extend .sidebar__search;    }}.search {    font: normal 1.3em 'century gothic', arial;    &__title {        font-weight: 100;        margin: 0 0 15px 0;        padding: 15px 0 5px 0;        color: #136cb2;    }    &__input {        outline: none;        border: none;        border: solid 1px #f2f2f2;        color: #5d5d5d;        width: 60%;        padding: 8px;    }    &__btn {        outline: none;        border: none;        border: solid 1px #f2f2f2;        padding: 8px;        background-color: white;        cursor: pointer;    }}.log-in {    @extend .search;    &__title {        @extend .search__title;    }    &__login-text {        @extend .search__input;    }    &__password {        @extend .search__input;    }    &__btn {        @extend .search__btn;    }    &__forgot {        outline: none;        text-decoration: underline;        color: #aeb002;        font-size: 0.7em;        margin-top: 3%;        margin-left: 2%;    }    &__sign-up {        @extend .log-in__forgot;    }}.news {    @extend .search;    &__title {        @extend .search__title;    }    &__date {        color: #555;    }    &__item {        padding: 20px;        line-height: 1.7em;        font-family: serif;        color: #555;    }    &__read-more {        @extend .log-in__forgot;        font-size: 1em;        font-family: serif;    }}.rate {    @extend .search;    &__title {        @extend .search__title;    }    &__list {        margin: 0;    }    &__li {        line-height: 1.8em;        list-style-type: none;    }    &__movie {        @extend .news__read-more;    }    &__point {        margin: 0;        @extend .news__read-more;        float: right;    }}.footer {        &__links {        padding-top: 15px;    }    &__link {        color: #a8aa95;        text-decoration: none    }    &__link:hover {        color: #fff;        text-decoration: none;    }    &__who {        margin-top: 10px;    }}/*for mobile*/@media all and (max-width: 1050px) and (min-width: 400px){    .header {        min-width: 100%;        background-color: #3d8b79;    }}

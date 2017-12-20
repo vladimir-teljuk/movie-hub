@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background-color: darkslateblue;
+  height: 200px;
+  margin-left: 0px;
+  margin-right: 0px;
+  min-width: 800px; }
+  .header__logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 880px; }
+  .header__menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 27px 0 15px 0;
+    width: 900px;
+    float: right; }
+
+.logo__title, .logo__title_link, .logo__title_link:hover {
+  font: normal 1.7em 'century gothic', arial;
+  padding: 24px 0 0 0;
+  color: #000; }
+  .logo__title_link, .logo__title_link:hover {
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+
+.logo__text {
+  font: normal 1.2em 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 10px 0;
+  color: #999; }
+
+.menu {
+  font-size: 0.8em; }
+  .menu__item, .menu__item:hover {
+    padding: 10px 35px 5px 0px;
+    color: #fff;
+    font: normal 1.2em 'trebuchet ms', sans-serif;
+    text-decoration: none; }
+
+.menu__item.menu__item_selected {
+  color: #aeb002; }
+
+.content {
+  width: 880px;
+  margin: 20px auto 0 auto;
+  overflow: hidden; }
+  .content__movies, .content__serials, .content__post {
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background-color: darkslateblue;
+  color: #a8aa95;
+  font-size: 1.1em;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0;
+  min-width: 900px; }
+
+.sidebar {
+  float: right;
+  width: 224px; }
+  .sidebar__search, .sidebar__log-in, .sidebar__news, .sidebar__rate {
+    float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #f2f2f2;
+    border-radius: 5px;
+    background-color: #f9f9f9; }
+
+.search, .log-in, .news, .rate {
+  font: normal 1.3em 'century gothic', arial; }
+  .search__title, .log-in__title, .news__title, .rate__title {
+    font-weight: 100;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #136cb2; }
+  .search__input, .log-in__login-text, .log-in__password {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+    color: #5d5d5d;
+    width: 60%;
+    padding: 8px; }
+  .search__btn, .log-in__btn {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+    padding: 8px;
+    background-color: white;
+    cursor: pointer; }
+
+.log-in__forgot, .log-in__sign-up, .news__read-more, .rate__movie, .rate__point {
+  outline: none;
+  text-decoration: underline;
+  color: #aeb002;
+  font-size: 0.7em;
+  margin-top: 3%;
+  margin-left: 2%; }
+
+.news__date {
+  color: #555; }
+
+.news__item {
+  padding: 20px;
+  line-height: 1.7em;
+  font-family: serif;
+  color: #555; }
+
+.news__read-more, .rate__movie, .rate__point {
+  font-size: 1em;
+  font-family: serif; }
+
+.rate__list {
+  margin: 0; }
+
+.rate__li {
+  line-height: 1.8em;
+  list-style-type: none; }
+
+.rate__point {
+  margin: 0;
+  float: right; }
+
+.movies__title, .serials__title {
+  color: #555;
+  font-size: 1.7em;
+  font-family: sans-serif;
+  font-weight: 100; }
+
+.movies__blocks, .serials__blocks {
+  margin-bottom: 5%;
+  margin-top: 3%; }
+
+.movies__block, .serials__block {
+  display: inline-block;
+  border: solid 3px #f2f2f2;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 1%; }
+
+.movies__link-text, .serials__link-text, .serials__link-text:hover, .movies__link-text:hover, .serials__link-text:hover {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #555;
+  text-align: center;
+  padding-top: 3%;
+  font-size: 0.9em; }
+
+.movies__poster, .serials__poster {
+  width: 120px;
+  height: 180px;
+  align-items: center; }
+
+.post__line {
+  border: solid 1px #f3f3f3; }
+
+.post__title {
+  font-size: 1.7em;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 15px 0 5px 0;
+  margin-bottom: 15px; }
+  .post__title_link, .post__title_link:hover {
+    color: #aeb002;
+    text-decoration: none; }
+
+.post__content {
+  padding: 20px;
+  line-height: 1.7em;
+  color: #555; }
+
+.post__read-more, .post__read-more:hover {
+  outline: none;
+  text-decoration: none;
+  color: #aeb002;
+  font-size: 1.1em; }
+
+.footer__links {
+  padding-top: 15px; }
+
+.footer__link {
+  color: #a8aa95;
+  text-decoration: none; }
+
+.footer__link:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.footer__who {
+  margin-top: 10px; }

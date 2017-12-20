@@ -1,4 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -32,12 +34,17 @@ module.exports = {
                 {
                     test: /\.html$/,
                     use: ['file-loader?name=[name]/[name].[ext]']
-                }   
+                }
             ]
         },
     plugins: [
-        new ExtractTextPlugin('./[name]/[name].css', {
-            allChunks: true
-        })
+            new ExtractTextPlugin('./[name]/[name].css', {
+                allChunks: true
+            }),
+            new CopyWebpackPlugin([
+                {
+                from: 'main/images', to: 'main/images'
+                }
+            ])
     ]
-};
+}

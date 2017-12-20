@@ -5,21 +5,20 @@
 
 .header {
     background-color: darkslateblue;
-    height: 200px;
+    height: auto;
     margin-left: 0px;
     margin-right: 0px;
-    min-width: 800px;
+    min-width: 100%;
     &__logo {
         margin-left: auto;
         margin-right: auto;
-        width: 880px;
+        min-width: 65%;
+        padding-left: 5px;
     }
     &__menu {
-        margin-left: auto;
-        margin-right: auto;
-        margin: 27px 0 15px 0;
-        width: 900px;
-        float: right;
+        padding-bottom: 15px;
+        margin: 27px auto 0px auto;
+        width: 38%;
     }
 }
 
@@ -49,6 +48,7 @@
 
     &__item,
     &__item:hover {
+        display:  inline-block;
         padding: 10px 35px 5px 0px;
         color: #fff;
         font: normal 1.2em 'trebuchet ms', sans-serif;
@@ -62,12 +62,12 @@
 }
 
 .content {
-    width: 880px;
+    width: 68.75%;
     margin: 20px auto 0 auto;
     overflow: hidden;
     &__movies {
         text-align: left;
-        width: 620px;
+        width: 70.45%;
         padding: 0 0 0 5px;
         float: left;
     }
@@ -81,7 +81,7 @@
 
 .footer {
     width: 100%;
-    height: 100px;
+    height: auto;
     padding: 10px 0 0 0;
     text-align: center;
     background-color: darkslateblue;
@@ -91,15 +91,14 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0;
-    min-width: 900px;
 }
 
 .sidebar {
     float: right;
-    width: 224px;
+    width: 25.45%;
     &__search {
         float: right;
-        width: 222px;
+        width: 100%;
         padding: 5%;
         margin: 0 0 16px 0;
         border: solid 1px #f2f2f2;
@@ -316,4 +315,11 @@
     &__who {
         margin-top: 10px;
     }
+}
+
+
+/*for mobile*/
+
+@media all and (max-width: 1050px) and (min-width: 400px){
+
 }
