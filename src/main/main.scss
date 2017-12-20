@@ -12,13 +12,13 @@
     &__logo {
         margin-left: auto;
         margin-right: auto;
-        min-width: 65%;
+        max-width: 65%;
         padding-left: 5px;
     }
     &__menu {
         padding-bottom: 15px;
         margin: 27px auto 0px auto;
-        width: 38%;
+        width: 50%;
     }
 }
 
@@ -44,21 +44,28 @@
 }
 
 .menu {
-    font-size: 0.8em;
-
-    &__item,
-    &__item:hover {
-        display:  inline-block;
-        padding: 10px 35px 5px 0px;
-        color: #fff;
-        font: normal 1.2em 'trebuchet ms', sans-serif;
-        text-decoration: none;
-
+    font-size: 0.9em;
+    &__item {
+        display: inline-block;
+        width: 19.5%;
+        max-height: 18px;
+        &-link {
+            color: #fff;
+            font: normal 1em 'trebuchet ms', sans-serif;
+            text-decoration: none;
+        }
     }
 }
+.menu__item-link:hover {
+    color: #fff;
+    font: normal 1em 'trebuchet ms', sans-serif;
+    text-decoration: none;
+}
 
-.menu__item.menu__item_selected {
+.menu__item-this {
     color: #aeb002;
+    font: normal 1em 'trebuchet ms', sans-serif;
+    text-decoration: none;
 }
 
 .content {
@@ -66,8 +73,9 @@
     margin: 20px auto 0 auto;
     overflow: hidden;
     &__movies {
+        min-width: 298px;
         text-align: left;
-        width: 70.45%;
+        width: 72%;
         padding: 0 0 0 5px;
         float: left;
     }
@@ -96,6 +104,8 @@
 .sidebar {
     float: right;
     width: 25.45%;
+    min-width: 161px;
+
     &__search {
         float: right;
         width: 100%;
@@ -220,8 +230,8 @@
         font-weight: 100;
     }
     &__blocks {
-        margin-bottom: 5%;
-        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-top: 1%;
 
     }
     &__block {
@@ -230,6 +240,7 @@
         border-radius: 5px;
         background-color: #f9f9f9;
         padding: 1%;
+        margin-top: 1%;
 
     }
     &__link-text,
@@ -320,6 +331,17 @@
 
 /*for mobile*/
 
-@media all and (max-width: 1050px) and (min-width: 400px){
+@media all and (max-width: 835px) {
+    .sidebar, .content__movies, .content__serials, .content__post {
+        display: inline-block;
+    }
+    .sidebar {
+        min-width: 164px;
+        width: 80%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
